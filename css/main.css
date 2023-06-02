@@ -1,0 +1,111 @@
+/* 
+    CSS Guide 
+
+    1.  General Styles (Normalize)
+
+ */
+
+
+ /* 1. ---General Styles--- */
+
+ body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img, embed, object, video, picture {
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5 {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+p {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+input, textarea {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+section h2, section h3, section p {
+    padding-left: 15px;
+}
+
+.spacer {
+    margin-top: 60px;
+}
+
+.txt-spacer {
+    margin-top: 30px;
+}
+
+ /* ---End of General Styles--- */
+
+#vanilla-icon {
+    width: 250px;
+    height: 250px;;
+
+}
+
+#vanilla-icon:hover {
+    transform: scale(1.1);
+}
+
+#cherry-icon {
+    width: 250px;
+    height: 250px;
+}
+
+#cherry-icon:hover {
+    transform: rotate(20deg);
+        }
+
+#almonds-icon {
+    width: 250px;
+    height: 250px;;
+}
+
+#almonds-icon:hover {
+    transform: skewY(20deg);
+}
+
+#organic-icon {
+    width: 250px;
+    height: 250px;;
+}
+
+#organic-icon:hover {
+opacity: 0.5;
+
+}
+
+#caffeine-free {
+    width: 250px;
+    height: 250px;
+}
+
+#caffeine-free:hover {
+    transform: scale(0.7);   
+}
+
+#gluten-free-icon {
+    width: 250px;
+    height: 250px;;
+}
+
+#gluten-free-icon:hover {
+    opacity: 0;
+    transition: all 1s ease-in;
+}
