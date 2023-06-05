@@ -1,10 +1,11 @@
 /* 
     CSS Guide 
 
-    1.  General Styles (Normalize)
+    1. General Styles (Normalize)
+    2. CSS Styles
+    3. SVG styles
 
  */
-
 
  /* 1. ---General Styles--- */
 
@@ -12,6 +13,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 img, embed, object, video, picture {
@@ -24,9 +26,6 @@ p, h1, h2, h3, h4, h5 {
 
 }
 
-p {
-    color: black;
-}
 
 a {
     text-decoration: none;
@@ -53,59 +52,191 @@ section h2, section h3, section p {
 
  /* ---End of General Styles--- */
 
-#vanilla-icon {
-    width: 250px;
-    height: 250px;;
+ /* 2. ---Start of CSS Styles--- */
+
+ body {
+ background-image: url("../images/wood-texture.jpg");
+  background-repeat: repeat;
 
 }
 
-#vanilla-icon:hover {
-    transform: scale(1.1);
+.container {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        height: 100%;
+        background-color: white;
 }
 
-#cherry-icon {
-    width: 250px;
-    height: 250px;
+h3, h4 {
+    font-family: 'EB Garamond', serif;
+    color: #4C1E11;
 }
 
-#cherry-icon:hover {
-    transform: rotate(20deg);
-        }
+ h3 {
+    font-size: 50px;
+    
+}
 
+h4 {
+    font-size: 35px;
+
+}
+
+p {
+    color: black;
+    font-size: 16pt;
+}
+
+.info1 {
+    margin-top: 20px;
+}
+
+.info {
+    margin-top: 10px;
+}
+
+ /* ---End of CSS Styles --- */
+
+ /* 3. ---Start of SVG Styles --- */
+
+
+/* ---Almonds SVG --- */
+        
 #almonds-icon {
-    width: 250px;
-    height: 250px;;
+    width: 225px;
+    height: 225px;;
 }
 
-#almonds-icon:hover {
-    transform: skewY(20deg);
+#almonds-icon:hover { 
+    cursor: pointer;
+    transform: scale(1.1);
+	animation: pulse 1.5s infinite;
 }
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	
+	}
+
+	70% {
+		transform: scale(1.2);
+		
+	}
+
+	100% {
+		transform: scale(0.95);
+		
+	}
+}
+
+/* ---Organic SVG --- */
 
 #organic-icon {
-    width: 250px;
-    height: 250px;;
+    width: 225px;
+    height: 225px;;
 }
 
 #organic-icon:hover {
-opacity: 0.5;
+   animation: bounce 1.5s linear infinite;
+   cursor: pointer;
 
 }
 
-#caffeine-free {
-    width: 250px;
-    height: 250px;
+@keyframes bounce{
+    20%,50%,80%,to{
+        transform: translateY(0);
+
+    }
+
+    40%{
+        transform: translateY(-30px);
+    }
+
+    70%{
+        transform: translateY(-15px);
+}
+    90%{
+        transform: translateY(-4px);
+    }
+
 }
 
-#caffeine-free:hover {
-    transform: scale(0.7);   
+/* ---Caffeine-Free SVG --- */
+
+#caffeine-icon {
+    width: 225px;
+    height: 225px;
+    cursor: pointer;
 }
 
-#gluten-free-icon {
-    width: 250px;
-    height: 250px;;
+#caffeine-icon:hover .cls-24 {
+    cursor: pointer;
+    fill: white;
+
 }
 
-#gluten-free-icon:hover {
-    opacity: 0;
-    transition: all 1s ease-in;
+#caffeine-icon:hover .cls-14 {
+    cursor: pointer;
+    fill: #4C1E11;
+    
 }
+
+/* ---Gluten Free SVG --- */
+
+#gluten-icon {
+    width: 225px;
+    height: 225px;;
+}
+
+#gluten-icon:hover .cls-02 {
+    transition: ease-in 1.5s;
+    fill: white;
+    cursor: pointer;
+    
+}
+
+#gluten-icon:hover .cls-01 {
+    fill: #4C1E11;
+    transition: ease-in-out 1.5s;
+    cursor: pointer;
+}
+
+/* ---Vanilla SVG --- */
+
+#vanilla-icon {
+    width: 225px;
+    height: 225px;;
+}
+
+#vanilla-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#vanilla-icon:hover .cls-2 {
+    fill: black;
+}
+
+/* ---Cherry SVG --- */
+
+#cherry-icon {
+    width: 225px;
+    height: 225px;
+}
+
+#cherry-icon:hover {
+    cursor: pointer;
+    animation:spin 4s linear infinite;
+}
+
+@keyframes spin { 
+    100% { 
+        transform: rotate(360deg); } 
+}
+
+ /* ---End of SVG Styles --- */
+
+
